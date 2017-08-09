@@ -43,7 +43,8 @@ body {
 .nav-pannel li {
     display: inline-block;
     font-size: 1.6rem;
-    padding-right: 50px;
+    padding-right: 43px;
+    text-transform: capitalize;
 }
 
 .nav-pannel li:nth-last-of-type(1){
@@ -443,4 +444,76 @@ body {
 
 .left-side-text {
 	color: #86868c;
+}
+
+.process {
+	max-width: 100%;
+	width: 100%;
+	height: 450px;
+}
+
+.process-top {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.process-top-text,
+.design-text,
+.craft-text,
+.customize-text {
+	color: #86868c;
+}
+
+.process-top > .separator,
+.pricing-top > .separator {
+	padding-left: 516px;
+}
+
+.process-bottom {
+	margin-top: 80px;
+	height: 200px;
+}
+
+.design,
+.craft,
+.customize {
+	text-align: center;
+	display: inline-block;
+}
+
+.craft,
+.customize {
+	margin-left: 20px;
+}
+
+.design-img,
+.craft-img,
+.customize-img {
+	padding-bottom: 15px;
+	color: #ff8b38;	
+}
+
+.fa-keyboard-o {
+	padding: 12px;
+    border: 3px solid;
+    border-radius: 50%;
+}
+
+.fa-lightbulb-o,
+.fa-bolt {
+    padding: 12px 19px;
+    border: 3px solid;
+    border-radius: 50%;
+}
+
+.pricing {
+	width: 100%;
+	height: 800px;
+	background-color: #f5f5f5;
+	border: 1px solid red;
+}
+
+.pricing-top {
+	text-align: center;
+	margin-top: 100px;
 }
