@@ -644,3 +644,71 @@ body {
 	padding-top: 100px;
 	text-align: center;
 }
+
+.testimonials-bottom {
+	padding-top: 50px;
+}
+
+.manager-mind > p.mind {
+	display: inline-block;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    background: #f5f5f5;
+    color: #a6a7a9;
+    box-shadow: 0 0 7px #000; /* Добавляем тень для блока */
+
+}
+
+.mind::before, .mind::after {
+    content: '';
+    position: absolute;
+    background: #f5f5f5;
+    left: 20px; bottom: -11px;
+    width: 20px; height: 20px;
+    box-shadow: 0 0 7px #000; /* Добавляем тень для уголка */
+    z-index: -1; /* Прячем за основным блоком */
+    transform: rotate(45deg); /* Поворачиваем на 45º */
+    -webkit-transform: rotate(45deg);
+}
+
+.mind::after {
+  	z-index: 1; /* Накладываем поверх, чтобы скрыть следы тени */
+    box-shadow: none; /* Прячем тень */
+}
+
+.manager {
+	float: left;
+}
+
+.manager:nth-last-child(3){
+	margin-left: 30px;
+}
+
+.manager:nth-last-child(2){
+	padding-right: 60px;
+	padding-left: 60px;
+}
+
+.manager-context {
+	padding-top: 15px;
+}
+
+.manager-context > .face {
+	float: left;
+	padding-right: 15px;
+}
+
+.manager-title > h2,
+.manager-role > p {
+	margin: 0;
+}
+
+.manager-title > h2 {
+	margin-top: 10px;
+	color: #333333;
+}
+
+.manager-role > p {
+	color: #a6a7a9;
+}
