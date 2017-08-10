@@ -465,7 +465,8 @@ body {
 }
 
 .process-top > .separator,
-.pricing-top > .separator {
+.pricing-top > .separator,
+.testimonials-top > .separator {
 	padding-left: 516px;
 }
 
@@ -510,21 +511,37 @@ body {
 	width: 100%;
 	height: 800px;
 	background-color: #f5f5f5;
-	border: 1px solid red;
 }
 
 .pricing-top {
 	text-align: center;
-	margin-top: 100px;
+    padding-top: 70px;
 }
 
-.pricing-bottom > .pricing-basic {
+.pricing-bottom {
+	margin-top: 90px;
+}
+
+.pricing-professional {
+	margin-top: -33px;
+}
+
+.pricing-professional > .podpis {
+	border-top: 2px solid #f5f5f5;
+}
+
+.pricing-basic {
+	margin-left: 50px;
+}
+
+.pricing-bottom > .pricing-basic,
+.pricing-bottom > .pricing-professional {
 	display: inline-block;
     float: left;
-    margin-right: 20px;
+    margin-right: 50px;
 }
 
-.tb-1 {
+.tb-1, .tb-2, .tb-3 {
 	display: inline-block;
 	text-align: center;
 	padding: 0;
@@ -533,7 +550,9 @@ body {
 	width: 300px;
 }
 
-.tb-1 > li {
+.tb-1 > li,
+.tb-2 > li,
+.tb-3 > li {
 	list-style-type: none;
 }
 
@@ -545,12 +564,32 @@ body {
 	padding-bottom: 20px;
 }
 
-.basic-title > h2 {
+.tb-2 > li.professional-title,
+.tb-2 > li.professional-price {
+	color: #FFF;
+	background-color: #333333;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.tb-3 > li.enterprise-title,
+.tb-3 > li.enterprise-price {
+	color: #FFF;
+	background-color: #333333;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.basic-title > h2,
+.professional-title > h2,
+.enterprise-title > h2 {
 	margin: 0;
 	padding: 0;
 }
 
-.tb-1 > li.basic-price {
+.tb-1 > li.basic-price,
+.tb-2 > li.professional-price,
+.tb-3 > li.enterprise-price {
 	border-top: 1px solid #f5f5f5;
 	border-bottom: 5px solid #ff8b38;	
 }
@@ -571,11 +610,37 @@ body {
 	color: #8e8e8e;
 }
 
-.tb-1 > li.item {
+.tb-1 > li.item,
+.tb-2 > li.item,
+.tb-3 > li.item {
 	padding: 10px;
 	border-bottom: 1px solid #f5f5f5;
 	background: #FFF;
 	text-transform: uppercase;
 	color: #86868c;
 	font-size: 15px;
+}
+
+.prof-footer {
+	background-color: #ff8b38;
+	color: #FFF;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 5px;
+	padding-bottom: 10px;
+}
+
+.professional-price > .bb {
+	border-bottom: 1px solid #f5f5f5;
+}
+
+.testimonials {
+	height: 590px;
+	width: 100%;
+}
+
+.testimonials-top {
+	padding-top: 100px;
+	text-align: center;
 }
