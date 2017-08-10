@@ -89,10 +89,12 @@ body {
 	font-weight: 400;
 }
 
-.separator {
+.separator,
+.separator_custom {
 	width: 66px;
 }
 
+.separator__white > hr,
 .separator__white > hr {
 	border: none;
 	color: #FFF;
@@ -162,7 +164,7 @@ body {
     width: 67%;
     padding: 15px 20px;
     border: none;
-    padding-top: 42px;
+    margin-top: 20px;
     border-bottom: 1px solid #d6d6d6;
     color: #d6d6d6;
 }
@@ -242,7 +244,7 @@ body {
 }
 
 .fa-stumbleupon:hover {
-	color: black;
+	color: #4A49FF;
 }
 
 .fa-rss:hover {
@@ -351,7 +353,7 @@ body {
 
 .feature-center {
 	width: 100%;
-	height: 600px;
+	height: 550px;
 	background: #FFF;
 }
 
@@ -466,7 +468,8 @@ body {
 
 .process-top > .separator,
 .pricing-top > .separator,
-.testimonials-top > .separator {
+.testimonials-top > .separator,
+.contact-context > .separator {
 	padding-left: 516px;
 }
 
@@ -641,7 +644,7 @@ body {
 }
 
 .testimonials-top {
-	padding-top: 100px;
+	padding-top: 60px;
 	text-align: center;
 }
 
@@ -711,4 +714,107 @@ body {
 
 .manager-role > p {
 	color: #a6a7a9;
+}
+
+.custom {
+	width: 100%;
+	height: 320px;
+	background: url('../img/custom.jpg') no-repeat;
+	color: #FFF;
+	text-align: center;
+}
+
+.separator_custom {
+	padding-left: 516px;
+}
+
+.custom-title {
+	padding-top: 70px;
+	padding-bottom: 5px;
+}
+
+.custom-text {
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+.contact {
+	width: 100%;
+	height: 600px;
+}
+
+.contact-context {
+	text-align: center;
+    padding-top: 50px;
+}
+
+.contact-title {
+	text-transform: uppercase;
+}
+.contact-text {
+	color: #a6a7a9;
+}
+
+.form__second-row-left > input {
+	float: left;
+    margin-left: 37.5px;
+    margin-right: 65px;
+    width: 450px;
+    padding: 15px 20px;
+    border: none;
+    margin-top: 42px;
+    border-bottom: 1px solid #d6d6d6;
+    color: #d6d6d6;
+}
+
+.form__second-row-right {
+	display: inline-block;	
+}
+
+.form__second-row-right > input {
+	margin-top: 55px;
+	padding-bottom: 198px;
+	width: 450px;
+	border: none;
+	border-bottom: 1px solid #d6d6d6;
+    color: #d6d6d6;
+
+}
+
+.form__second-footer {
+	margin-top: 43px;
+	text-align: center;	
+}
+
+.form__second-footer-btn > button {
+    padding: 18px 20px;
+    border: none;
+    color: white;
+    background-color: #ff9b51;
+    cursor: pointer;
+    text-transform: capitalize;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.form__second-footer-btn > button:hover {
+	background-color: green;
+}
+
+.footer {
+	width: 100%;
+	background-color: #000000;
+	text-align: center;
+}
+
+.footer .social-buttons > .social-buttons__row {
+	display: inline-block;
+	padding-left: 20px;
+}
+
+.footer-text > p {
+    color: #FFF;
+    margin-top: -20px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
 }
